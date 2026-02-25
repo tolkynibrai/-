@@ -265,7 +265,107 @@
 //   sayHappyNewYear()
 // }
 
-function sumTwoNumbers(num1, num2){
-  console.log(num1+ num2)
+// function sumTwoNumbers(num1, num2){
+//   console.log(num1+ num2)
+// }
+// sumTwoNumbers(2, 5)
+
+
+///Циклы 3ч
+// function sumTwoNumber(num1, num2){
+//   if (num1 === undefined || num2=== undefined){
+//     console.log('некоторые параметры отсутствуют');
+//   }
+//  else if (typeof num1 !== 'number' || typeof num2 !== 'number'){
+// console.log('невалидный аргумент');
+//  }
+//  else{
+//   console.log(nim1+num2);
+//  }
+// }
+
+// sumTwoNumber (5, 7);
+// sumTwoNumber (2, 7);
+// sumTwoNumbe ('fds', true);
+// sumTwoNumbe ();
+// sumTwoNumbe (2);
+// sumTwoNumbe (0, 0);
+
+// function multiplyTwoNumber( num1, num2){
+//   console.log(num1*num2)
+// }
+
+
+// multiplyTwoNumber(5, 2)
+
+// function printSquares( min, max){
+//   if(min>max) {
+//     console.log('min не может быть больше max')
+//   }
+//   else if(min===max){
+//     console.log('min не может быть равен max')
+//   }
+// else{
+//     for (let i = min; i < max; i++) {
+//   console.log (i**2)
+// }
+// }
+// }
+
+// // printSquares(0, 10)
+// // printSquares(10, 0)
+// // printSquares(10,0)
+// // printSquares(10, 10)
+
+
+
+//ФУНКЦИЯ КАК ПЕРЕМЕННАЯ= анонимная или стрелочная функия
+// const sayHello =function (){
+//   console.log('Hello')
+// }
+
+// sayHello()
+
+// const sayHello = () =>{
+//  console.log('Hello') 
+// }
+
+// sayHello() ///хз что это, потом узнам 
+
+
+
+//retutn=возвращать
+// function divideTwoNumber( num1, num2){
+//   return num1/ num2 
+//   // console.log(num1/num2)
+// }
+
+// function increaseNumber(num1){
+//   console.log(num1+1)
+// }
+
+
+
+// let result = divideTwoNumber(20, 2)
+// console.log(result)
+// result++
+
+// increaseNumber(result)
+
+function getRandomInteger(min, max) {
+    
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-sumTwoNumbers(2, 5)
+
+function generateRandomRgb() {
+    const r = getRandomInteger(0, 255);
+    const g = getRandomInteger(0, 255);
+    const b = getRandomInteger(0, 255);
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
+setInterval(function() {
+    const randomColor = generateRandomRgb();
+    console.log(randomColor); 
+    document.body.style.backgroundColor = randomColor;
+}, 1000);
