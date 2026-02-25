@@ -219,9 +219,53 @@
 //   }
 // }
 
-const userAnswer= prompt (' введите число')
-const userNumber= Number(userAnswer)
+// const userAnswer= prompt (' введите число')
+// const userNumber= Number(userAnswer)
 
-for (let i=0; i< userNumber; i +=2 ){
-console.log (i**2)
+// for (let i=0; i< userNumber; i +=2 ){
+// console.log (i**2)
+// }
+
+
+
+// for( let i=1; i<=100; i++)
+
+//    if( i%3===0 && i%5===0){
+//     console.log ('fizzBuzz')
+//   }
+//    else if (i%3 ===0){
+//     console.log ('fizz')
+  
+//   } 
+//   else if (i%5 ===0){
+//     console.log('buzz')
+//   }
+
+//   else{
+//     console.log(i)
+//   }
+
+///WHILE LOOP
+
+// let i=0
+// while (i<10){
+//   console.log('hello')
+//   i++
+// }
+
+//Функции
+
+// function sayHappyNewYear(personName){
+//   console.log(`С новым годом, ${personName}`)
+// }
+// sayHappyNewYear('Tolkyn')
+// sayHappyNewYear('Kirill')
+
+// for( let i=1; i<=10; i++){
+//   sayHappyNewYear()
+// }
+
+function sumTwoNumbers(num1, num2){
+  console.log(num1+ num2)
 }
+sumTwoNumbers(2, 5)
