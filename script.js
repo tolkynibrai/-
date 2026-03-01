@@ -352,20 +352,124 @@
 
 // increaseNumber(result)
 
-function getRandomInteger(min, max) {
+// function getRandomInteger(min, max) {
     
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// function generateRandomRgb() {
+//     const r = getRandomInteger(0, 255);
+//     const g = getRandomInteger(0, 255);
+//     const b = getRandomInteger(0, 255);
+//     return `rgb(${r}, ${g}, ${b})`;
+// }
+
+// setInterval(function() {
+//     const randomColor = generateRandomRgb();
+//     console.log(randomColor); 
+//     document.body.style.backgroundColor = randomColor;
+// }, 1000);
+
+// Обьекты в js
+// const text= 'hello'
+
+// if(true){
+//   const text='if'
+//  }
+
+// for(let  i=0; i<10; 1++){
+//   const text='for'
+//  }
+
+// function hello(){
+//   const text= 'fuction'
+//  }
+// while(true){
+//   const text='while'
+//  }
+
+//Closures
+// function outerFunc(){
+//   let counter = 0
+ 
+//   return function(){
+//   counter++
+//   console.log(counter)
+//   }
+// }
+
+// const innerFunc = outerFunc()
+// innerFunc()
+// innerFunc()
+// innerFunc()
+
+// function showDesimalOrInteger(n){
+
+//    for( let i=1; i<n ; i+=0.5){ 
+//     if(Number.isInteger(i)){
+//       console.log(i+'integer')
+//     }
+//     else {
+//       console.log(i + 'desimal')
+//     } 
+//   }
+// }
+// showDesimalOrInteger(10)
+
+//objacts обьекты
+
+// const phoneName= ' Iphome 14'
+// const color= ' black'
+// const memory= 256
+// const inStock= true
+
+// const phoneName2= ' Samsung'
+// const color2= 'grey'
+// const memory2= 126
+// const inStock2=false
+
+
+// field. value, key - поле значение
+// const phone1 = {
+// name:'Iphome 14',
+// color: ' black',
+// memory: 258,
+// inStock: true
+// }
+
+// const phone2 = {
+// name:'Samsung',
+// color: 'grey',
+// memory2: 126,
+// inStock2: false
+// }
+
+// console.log(phone1)
+// console.log(phone2)
+
+
+// console.log(phone1.name)
+// console.log(phone1['color'])
+
+//как менять 
+
+const phone1 = {
+name:'Iphome 14',
+color: ' black',
+memory: 258,
+inStock: true
 }
 
-function generateRandomRgb() {
-    const r = getRandomInteger(0, 255);
-    const g = getRandomInteger(0, 255);
-    const b = getRandomInteger(0, 255);
-    return `rgb(${r}, ${g}, ${b})`;
-}
+phone1.color= 'red'
+ 
+//добавить новое поле
+phone1.screenSize= 6.7
 
-setInterval(function() {
-    const randomColor = generateRandomRgb();
-    console.log(randomColor); 
-    document.body.style.backgroundColor = randomColor;
-}, 1000);
+//как удалять поле
+phone1.memory= undefined
+
+///удалять поле со значение
+delete phone1.name
+delete phone1.color
+
+console.log(phone1)
