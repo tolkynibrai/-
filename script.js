@@ -453,23 +453,135 @@
 
 //как менять 
 
-const phone1 = {
-name:'Iphome 14',
-color: ' black',
-memory: 258,
-inStock: true
-}
+// const phone1 = {
+// name:'Iphome 14',
+// color: ' black',
+// memory: 258,
+// inStock: true
+// }
 
-phone1.color= 'red'
+// phone1.color= 'red'
  
-//добавить новое поле
-phone1.screenSize= 6.7
+// //добавить новое поле
+// phone1.screenSize= 6.7
 
-//как удалять поле
-phone1.memory= undefined
+// //как удалять поле
+// phone1.memory= undefined
 
-///удалять поле со значение
-delete phone1.name
-delete phone1.color
+// ///удалять поле со значение
+// delete phone1.name
+// delete phone1.color
 
-console.log(phone1)
+// console.log(phone1)
+
+
+//Ссылочный тип даных
+// const student1={
+// name: 'Vladimir',
+// lessonType:'online'
+// }
+
+// const student2={
+//   name:'Tolkyn',
+//   lessonType:'offline',
+// }
+
+// student1.lessonType='offline'
+// student2.lessonType='online'
+
+// console.log(student1)
+// console.log(student2)
+
+
+// const studentOriginal={
+//   name:'Kairat',
+//   lessonType:'offline'
+// }
+
+// const studentCopy= studentOriginal
+
+// studentOriginal.lessonType='online'
+
+// console.log(studentOriginal)
+// console.log(studentCopy) 
+
+
+// const studentOriginal={
+//   name:'Kairat',
+//   lessonType:'offline',
+//   address:{
+//     country:'kazakhstan',
+//     city:'Astana',
+//   }
+// }
+// // //spread оператор 
+
+// // const studentCopy= {...studentOriginal}
+
+// // // studentOriginal.lessonType='online'
+// // // studentCopy.name='Aisultan'
+
+// // JSON копирование обьека без последствий 
+
+
+ 
+// //'{"name":"Kairet", "lessonType": "offline"}'  //обязательно овычки двойные и строка
+
+// const studentOriginalJSON= JSON.stringify(studentOriginal) 
+
+// const studentCopy= JSON.parse(studentOriginalJSON)
+
+
+
+// studentOriginal.address.city='Almaty'
+
+// console.log(studentOriginal)
+// console.log(studentCopy) 
+
+ 
+
+//Циклы для обьекта
+
+// const car={
+//   moder:'kia',
+//   color:'black',
+//   price:7_000_00,
+//   isNew: false,
+// }
+
+// // for(const key in car){
+// //   console.log(key)///все поля
+// // }
+
+// for(const key in car){
+//   console.log(car[key])///все переменные 
+// }
+
+
+// ///как проверить есть ли обьект в поле
+// console.log('color' in car) //правда или ложь
+
+
+//заморозка
+
+// const student={
+//   name:'Timur',
+//   phone:'iphone',
+// }
+
+// Object.freeze(student)
+// student.phone='xiaomi mi 15'
+
+// console.log(student)
+
+
+// const engineers = {
+//     Den: 1000,
+//     Matt: 5000,
+//     Steve: 2000
+// }
+
+// for (const key in engineers) {
+//     console.log(`Зп ${key} составляет ${engineers[key]} usd.`) 
+// }
+
