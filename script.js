@@ -684,7 +684,7 @@
 
 
 
-const numbers = [42, 65, 49, 68, 56, 47, 70, 42, 51, 35, 58, 63, 40, 70]
+//  
 
 // for(const number of numbers){
 //   console.log(number)
@@ -707,15 +707,153 @@ const numbers = [42, 65, 49, 68, 56, 47, 70, 42, 51, 35, 58, 63, 40, 70]
 // }
 //   console.log(sum)
 
-let max=0
+// let max=0
 
-for(const number of numbers){
-  if (max < number) {
-    console.log('старое максимальное число,', max)
-    max= number 
-    console.log('новое максимальное число,', max)
-  }
-  else{
-    console.log(`число ${number} меньше чем максимальное число ${max} ничего не делаем`)
-  }
+// for(const number of numbers){
+//   if (max < number) {
+//     console.log('старое максимальное число,', max)
+//     max= number 
+//     console.log('новое максимальное число,', max)
+//   }
+//   else{
+//     console.log(`число ${number} меньше чем максимальное число ${max} ничего не делаем`)
+//   }
+// }
+
+
+// const student=[
+// {
+//   name: 'Aisultan',
+//   lessonType: 'online',
+// },
+// {
+//   name: 'altair',
+//   lessonType: ' offline'
+// }
+// ]
+// // console.log(student[1].lessonType)
+
+
+// const studentJSON= JSON.stringify(student)
+// studentCopy= JSON.parse(studentJSON)
+
+// console.log(studentJSON)
+
+// studentCopy[0].name='sagynysh'
+
+// console.log(student)
+// console.log(studentCopy)
+
+
+
+// let questions = [{
+//     question: "What's the currency of the USA?",
+//     choices: ["US dollar", "Ruble", "Horses", "Gold"],
+//     corAnswer: 0,
+// }, {
+//     question: "Where was the American Declaration of Independence signed?",
+//     choices: ["Philadelphia", "At the bottom", "Frankie's Pub", "China"],
+//     corAnswer: 0
+// }];
+
+
+// // for (let i=0; i< questions.length; i++){
+// // const questions= questions[i]
+// // questions.userAnswer= null
+// // }
+
+
+// for (const question of questions){
+//   questions.userAnswer= null
+// }
+// console.log(questions)
+
+
+
+
+
+// Задание 7
+
+// Определить массив let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0]
+
+// Создать новый массив из элементов массива arr, 
+// но в новом должны содержаться только положительные элементы.
+// Подсказка. Изначально нужно объявить пустой массив-хранилище 
+// (например, let newArr = []). Затем пройтись в цикле по массиву arr, 
+// и в каждой итерации, если элемент положительный, добавлять его в массив newArr
+
+// let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0]
+// const newArr =[]
+
+
+// for(const number of arr){
+// if (number > 0){
+//    newArr.push(number)
+// }
+// }
+// console.log(newArr)
+
+// let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0]
+
+// function filterArrayByLimit(array, limit){
+//  const filterArray=[]
+
+//  for(const element of array){
+//   if( elemern>= limit ){
+//     filterArray.push(element)
+//   }
+//  }
+//   return filterArray
+// }
+
+// console.log(filterArrayByLimit(arr, 3))
+// console.log(filterArrayByLimit(arr, 5))
+
+// const numbers= [12, 5,64,76,32]
+// numbers.forEach(function (number, index){
+//   console.log(number, index)
+// })
+
+
+// const numbers= [12, 5,64,76,32]
+
+// for(const number of numbers){
+//   if (number === 64 )
+
+// }
+// console.log(number)
+
+// const numbersCopy = numbers.map(function (number){
+// return number * 2
+// })
+
+// console.log(numbers)
+// console.log(numbersCopy)
+
+// const arr = [12, 5, 64, 76, 32];
+
+// function copyArr( arr ){
+//   return arr.map(function(num){
+//     return num;
+//   }) 
+// }
+// console.log(copyArr(arr))
+
+// const arr =[ 5, 4, 3, -3, -10, -1, 8, -20, 0 ]
+
+// function copyArr(array){
+//   return array.map( element=> element)
+// }
+
+// console.log(copyArr(arr))
+// console.log(copyArr([6, 4, 3]))
+
+const names = ['Mike', 'Stive', 'Robin'];
+
+function greetig (array){
+  return array.map((name) => {
+    return `Hello, $ {name}`;
+  });
 }
+
+console.log(greetig(names)); 
