@@ -848,12 +848,121 @@
 // console.log(copyArr(arr))
 // console.log(copyArr([6, 4, 3]))
 
-const names = ['Mike', 'Stive', 'Robin'];
+// const names = ['Mike', 'Stive', 'Robin'];
 
-function greetig (array){
-  return array.map((name) => {
-    return `Hello, $ {name}`;
-  });
-}
+// function greetig (array){
+//   return array.map((name) => {
+//     return `Hello, $ {name}`;
+//   });
+// }
 
-console.log(greetig(names)); 
+// console.log(greetig(names)); 
+
+
+// const number1= [ 1, 2, 3]
+// const number2= [4, 5, 6]
+
+// for( const number of number2){
+//   number1.push(number)
+// }
+// console.log(number1)
+
+// const number3= [... number1, ...number2]
+// const number3= [... number2, ...number1]
+// console.log(number3)
+
+
+// // const number3= number1.concat(number2)
+// const number3= number2.concat(number1)
+// console.log(number3)
+
+
+//Join
+// const number1=[1, 2, 3, 4, 5, 6, 7]
+// console.log(number1)
+// console.log(number1.join('_'))
+
+
+// //slice
+// console.log(number1.slice(0, 2))
+// console.log(number1.slice(2, 5))
+// console.log(number1.slice(2))
+// console.log(number1.slice(2,3))
+
+// //slice
+// console.log(number1.splice(2, 2))
+// console.log(number1.splice(4, 2))
+
+// const ingredients = ['Мука', 'Сахар', 'Яйца', 'Молоко'];
+// console.log(ingredients.join(', '))
+// console.log(ingredients.join('+'))
+// console.log(ingredients.join(' '))
+
+// const queue = ['Ivan', 'Alice', 'Kate', 'Petr', 'Alex'];
+
+// const vip=  queue.slice(0, 2)
+// console.log(vip)
+
+
+// const tools = ['Saw', 'Hammer', 'Drill', 'Screwdriver'];
+
+// const newTools= tools.splice(1, 1)
+// console.log(tools)
+
+// const parts = ['https', 'mysite', 'com', 'shop', 'clothes', 'shirts'];
+// https://mysite.com/shop/clothes/shirts
+
+// const text= 'frontend- это круто'
+
+// console.log(text.includes('frontend'))
+// console.log(text.includes('-'))
+// console.log(text.startsWith('frontend'))
+
+// console.log(text.startsWith('-'))
+
+
+// const email='    OlzHas@Mail.ru'
+// console.log(email.toLowerCase())
+// console.log(email.toUpperCase())
+// console.log(email.trim())
+// console.log(email.toLowerCase().trim())
+
+// const input= '   ADMIN   '
+
+// const correct= input.toLowerCase().trim()
+// console.log(correct)
+// console.log('admin' === correct)
+
+// const url = "http://my-site.com";
+
+// if (url.startsWith("https://")){
+//   console.log("соединение защищено")
+// }
+// else{
+//   console.log("небезопасно!")
+// }
+
+
+// const text='Javascript'
+
+// // console.log(text[0])
+// // console.log(text.at(3))
+// console.log(text.slice(0, 4))
+// console.log(text.slice(4))
+// console.log(text.slice(0, -3))
+
+// // console.log(text.substring(4))
+
+// const names = 'Aisultan, Altair, Sagunysh, Kairat, Denis, Aisultan'
+
+// console.log(names.split( ))
+// console.log(names.replace('Aisultan', 'Tolkyn'))
+// console.log(names.replaceAll('Aisultan', 'Tolkyn'))
+
+const message = "Это плохой код. Ошибка здесь и ошибка"
+
+const good= message.replace('плохой', 'хороший')
+const now= good.replaceAll('ошибка', 'успех')
+const nowText= now.replaceAll('Oшибка', 'успех')
+
+console.log(nowText)
